@@ -27,3 +27,18 @@ Run from the repository root so that `import reflectometry` resolves.
 
 VNA CSV files are not stored in this repository. Keep them in a `data/` directory
 (ignored by git) or point `load_vna_csv` at their location.
+
+## Tests
+
+    pip install pytest
+    pytest
+
+Without pytest, run `python tests/run_without_pytest.py` from the repository root.
+
+## Scripts
+
+Reproduce the analysis runs from the command line. Put the VNA exports in `data/`
+(not tracked by git).
+
+    python scripts/fit_short_cable.py data/cable.csv --band 0.1 200 --plot cable_fit.png
+    python scripts/fit_bridge_spectra.py --data-dir data --fit C_P L_P R_L --fit-cable-length --plot bridge_fit.png
