@@ -1,0 +1,22 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Plots and generated files (regenerate, don't version)
+*.png
+*.pdf
+
+# Raw VNA exports: keep out of git, store separately
+data/
+*.csv
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
